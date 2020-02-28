@@ -1,0 +1,59 @@
+@import 'pages/SCSS/variables';
+
+.App {
+	height: 100%;
+	.navbar {
+		padding-top: 15px;
+		box-sizing: border-box;
+		background: white;
+		.nav-link {
+			color: $blue;
+			font-size: 24px;
+			font-family: 'PT Sans';
+			transition: color .1s linear;
+
+			&::before {
+				display: inline-block;
+				margin-right: 5px;
+				content: '<';
+				opacity: 0;
+				transform: translateX(20px);
+				transition: transform 0.3s, opacity 0.2s;
+			}
+
+			&::after {
+				content: '/>';
+				margin-left: 5px;
+				display: inline-block;
+				opacity: 0;
+				transform: translateX(-20px);
+				transition: transform 0.3s, opacity 0.2s;
+			}
+
+			&:hover {
+				color: black;
+				&::after,
+				&::before {
+					opacity: 1;
+					transform: translateX(0px);
+				}
+			}
+		}
+		.active-link {
+			color: black;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.App {
+		.navbar {
+			.nav-link {
+				&::after,
+				&::before {
+					display: none;
+				}
+			}
+		}
+	}
+}

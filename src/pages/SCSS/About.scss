@@ -1,0 +1,167 @@
+@import 'variables';
+
+.About {
+	height: 100%;
+	//background: $grey;
+	margin: auto;
+	display: flex;
+
+	.introduction {
+		//text-align: justify;
+		width: 100%;
+		padding: 20px 70px;
+		margin: auto;
+
+		h1 {
+			@include h1;
+		}
+		p {
+			font-family: 'Quicksand', sans-serif;
+			font-size: 30px;
+			text-align: left;
+			font-weight: bold;
+		}
+		.CV {
+			width: 100%;
+			min-width: 200px;
+			min-height: 50px;
+			border: 2px solid black;
+			transition: all .3s linear;
+			font-family: 'Quicksand', sans-serif;
+			font-weight: bold;
+			font-size: 20px;
+			background: linear-gradient(to left, white 50%, $blue 50%);
+			background-size: 200% 100%;
+			background-position: right bottom;
+
+			&:hover {
+				color: white;
+				border-color: $blue;
+				background-position: left bottom;
+			}
+		}
+	}
+
+	.right-side {
+		width: 100%;
+		padding: 20px 70px;
+		font-family: 'Quicksand', sans-serif;
+		font-size: 30px;
+		margin: auto;
+
+		h2 {
+			font-family: 'Montserrat';
+			font-weight: bold;
+		}
+
+		.console-text {
+			background: $blue;
+			font-family: 'Inconsolata';
+			font-size: 20px;
+		}
+
+		.socials {
+			@include socials;
+			justify-content: space-between;
+		}
+	}
+	.highlight {
+		@include highlight;
+	}
+
+	.row {
+		align-content: center;
+	}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+	.About {
+		.introduction {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 10px 30px;
+			h1 {
+				font-size: 40px !important;
+				text-align: center;
+			}
+
+			p {
+				font-size: 20px !important;
+				text-align: center;
+				padding: 30px 0px;
+			}
+		}
+
+		.right-side {
+			padding: 10px 30px;
+			margin-top: 50px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			.socials {
+				text-align: center;
+			}
+
+			h2 {
+				text-align: center;
+			}
+
+			.console-text {
+				margin: 10px 0px;
+			}
+		}
+	}
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (max-width: 768px) {
+	.About {
+		.introduction {
+			padding: 10px 30px;
+			p {
+				font-size: 18px !important;
+			}
+		}
+
+		.right-side {
+			padding: 10px 30px;
+			margin-top: 50px;
+
+			.console-text {
+				font-size: 12px !important;
+			}
+		}
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+	.About {
+		.introduction {
+			padding: 10px 30px;
+			h1 {
+				font-size: 30px;
+			}
+
+			p {
+				font-size: 25px;
+			}
+		}
+
+		.right-side {
+			padding: 10px 30px;
+			margin-top: 50px;
+
+			.console-text {
+				font-size: 16px;
+			}
+		}
+	}
+}
