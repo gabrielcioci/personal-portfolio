@@ -34,11 +34,10 @@ $yellow: #ffe75e;
 	i {
 		font-size: 30px;
 		transition: all .3s;
-		background: black;
 		padding: 10px;
+		color: black;
 		&:hover {
-			color: white;
-			background: $blue;
+			color: $blue;
 			cursor: pointer;
 		}
 	}

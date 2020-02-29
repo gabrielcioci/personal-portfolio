@@ -10,7 +10,8 @@ class About extends Component {
 		return (
 			<div className="About container ">
 				<div className="row">
-					<div className="col-sm-6 introduction">
+					{/*=================================== Start Introduction Section =====================================*/}
+					<div className="col-sm-12 col-md-6 introduction">
 						<h1>
 							Hi I'm <span className="highlight">Gabriel.</span>
 							<br /> Nice to meet ya!
@@ -23,7 +24,10 @@ class About extends Component {
 							<button className="CV">View CV</button>
 						</a>
 					</div>
-					<div className="col-sm-6 right-side">
+					{/*=================================== End Introduction Section =====================================*/}
+
+					{/*=================================== Start Socials Section ========================================*/}
+					<div className="col-sm-12 col-md-6 right-side">
 						<h2>
 							Let's <span className="highlight">connect</span>
 						</h2>
@@ -39,6 +43,7 @@ class About extends Component {
 						/>
 						<Socials github="true" linkedin="true" behance="true" dribbble="true" />
 					</div>
+					{/*=================================== End Socials Section =========================================*/}
 				</div>
 			</div>
 		);
