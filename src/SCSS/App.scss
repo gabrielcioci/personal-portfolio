@@ -1,4 +1,4 @@
-@import 'pages/SCSS/variables';
+@import 'variables';
 
 .App {
 	height: 100%;
@@ -7,7 +7,7 @@
 		box-sizing: border-box;
 		background: white;
 		.nav-link {
-			color: $blue;
+			color: $primarycolor;
 			font-size: 24px;
 			font-family: 'PT Sans';
 			transition: color .1s linear;

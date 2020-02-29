@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactRotatingText from 'react-rotating-text';
 import Socials from '../components/Socials';
-import './SCSS/About.scss';
+import '../SCSS/About.scss';
 import pdf from '../assets/ciocigabriel-cv.pdf';
 
 class About extends Component {

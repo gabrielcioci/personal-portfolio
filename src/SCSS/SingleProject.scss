@@ -1,0 +1,98 @@
+@import 'variables';
+
+.project-main {
+	max-width: 350px;
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+	border: 2px solid #eee;
+	box-sizing: border-box;
+	border-radius: 5px;
+	transition: all .1s linear;
+	margin-bottom: 25px;
+
+	&:hover > .project-title::after {
+		width: 40px;
+		background-color: $primarycolor;
+	}
+
+	.project-title {
+		font-size: 24px;
+		font-family: 'Quicksand', sans-serif;
+		font-weight: bold;
+		margin: 0 auto;
+		position: relative;
+		padding: 20px 0px;
+
+		&:after {
+			position: absolute;
+			width: 30px;
+			bottom: 15px;
+			left: 50%;
+			transform: translateX(-50%);
+			height: 3px;
+			background-color: #eee;
+			content: '';
+			border-radius: 5px;
+			transition: all .1s linear;
+		}
+	}
+
+	.project-image {
+		width: 100%;
+		height: 250px;
+		margin: 10px 0px;
+		overflow: hidden;
+		box-sizing: border-box;
+		position: relative;
+
+		img {
+			width: 100%;
+			max-height: 100%;
+		}
+
+		&:hover > .project-techs {
+			bottom: 5px;
+			cursor: pointer;
+		}
+
+		.project-techs {
+			padding: 5px;
+			color: white;
+			font-family: 'Quicksand';
+			font-weight: 600;
+			position: absolute;
+			bottom: -50px;
+			left: 5px;
+			transition: all .3s;
+			background: $primarycolor;
+		}
+	}
+
+	.project-buttons {
+		padding: 10px 0px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		button {
+			width: 150px;
+			border: none;
+			background: white;
+			color: $primarycolor;
+			padding: 10px;
+			box-sizing: border-box;
+			font-family: 'Quicksand', sans-serif;
+			font-weight: bold;
+			font-size: 16px;
+			transition: all .2s linear;
+			border: 2px solid $primarycolor;
+			outline: none;
+
+			&:hover {
+				background: $primarycolor;
+				color: white;
+			}
+		}
+	}
+}

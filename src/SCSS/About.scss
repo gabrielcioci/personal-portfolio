@@ -30,13 +30,13 @@
 			font-family: 'Quicksand', sans-serif;
 			font-weight: bold;
 			font-size: 20px;
-			background: linear-gradient(to left, white 50%, $blue 50%);
+			background: linear-gradient(to left, white 50%, $primarycolor 50%);
 			background-size: 200% 100%;
 			background-position: right bottom;
 
 			&:hover {
 				color: white;
-				border-color: $blue;
+				border-color: $primarycolor;
 				background-position: left bottom;
 			}
 		}
@@ -55,7 +55,7 @@
 		}
 
 		.console-text {
-			background: $blue;
+			background: $primarycolor;
 			font-family: 'Inconsolata';
 			font-size: 20px;
 		}

@@ -1,14 +1,14 @@
-$purple: #3b04dc;
-$blue: #023cfb;
-$green: #2be7b3;
+$secondarycolor: #023cfb;
+$primarycolor: #3b04dc;
+$complementarycolor: #2be7b3;
 $grey: #eee;
 $yellow: #ffe75e;
 
 @mixin highlight {
-	color: $blue;
+	color: $primarycolor;
 	transition: color .2s linear;
 	&:hover {
-		background: $blue;
+		background: $primarycolor;
 		color: white;
 	}
 }
@@ -37,7 +37,7 @@ $yellow: #ffe75e;
 		padding: 10px;
 		color: black;
 		&:hover {
-			color: $blue;
+			color: $primarycolor;
 			cursor: pointer;
 		}
 	}

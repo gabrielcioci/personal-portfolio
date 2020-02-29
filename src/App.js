@@ -4,7 +4,7 @@ import { Route, Switch, NavLink } from 'react-router-dom';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
-import './App.scss';
+import './SCSS/App.scss';
 import logo from './assets/logo.svg';
 
 class App extends Component {
@@ -46,7 +46,7 @@ class App extends Component {
 							</li>
 						</ul>
 					</div>
-				</nav>;
+				</nav>
 				{/*=================================== End Main Menu =====================================*/}
 				<Switch>
 					<Route exact path="/" component={About} />
