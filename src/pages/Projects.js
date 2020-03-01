@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import SingleProject from '../components/SingleProject.js';
 import '../SCSS/Projects.scss';
 
+import slots from '../assets/slot-machine.png';
+import lightsout from '../assets/lightsout.png';
+import pathfinding from '../assets/pathfinding.png';
+
 class Projects extends Component {
 	state = {};
 	render() {
@@ -15,23 +19,23 @@ class Projects extends Component {
 						<SingleProject
 							className="col-sm-12 col-md-6 col-lg-4 single-project"
 							title="Slot Machine"
-							featureImage="https://picsum.photos/400?blur&random=1"
+							featureImage={slots}
 							tech="ReactJS, JSX, HTML, SASS"
 							github="https://github.com/gabrielcioci/slot-machine"
-							demo=""
+							demo="https://gabrielcioci.github.io/slot-machine/"
 						/>
 						<SingleProject
 							className="col-sm-12 col-md-6 col-lg-4 single-project"
 							title="LightsOut"
-							featureImage="https://picsum.photos/400?blur&random=2"
+							featureImage={lightsout}
 							tech="ReactJS, JSX, HTML, CSS"
 							github="https://github.com/gabrielcioci/lightsout-game"
-							demo="https://google.ro"
+							demo="https://gabrielcioci.github.io/lightsout-game/"
 						/>
 						<SingleProject
 							className="col-sm-12 col-md-6 col-lg-4 single-project"
 							title="Pathfinding A*"
-							featureImage="https://picsum.photos/400?blur&random=3"
+							featureImage={pathfinding}
 							tech="HTML, P5, CSS"
 							github="https://github.com"
 							demo="https://google.ro"

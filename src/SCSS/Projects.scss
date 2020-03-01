@@ -22,3 +22,11 @@
 		content: '';
 	}
 }
+
+@media (max-width: 576px) {
+	.Projects {
+		h1 {
+			font-size: 30px !important;
+		}
+	}
+}
