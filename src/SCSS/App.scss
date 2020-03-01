@@ -2,6 +2,11 @@
 
 .App {
 	height: 100%;
+
+	.mobile-menu {
+		display: none;
+	}
+
 	.navbar {
 		padding-top: 17px;
 		box-sizing: border-box;
@@ -47,7 +52,33 @@
 
 @media (max-width: 768px) {
 	.App {
+		.mobile-menu {
+			padding: 10px 0px;
+			position: fixed;
+			z-index: 99;
+			bottom: 0;
+			width: 100%;
+			background: $primarycolor;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			.mobile-link {
+				color: white;
+				text-decoration: none;
+				font-family: 'Quicksand', sans-serif;
+				font-weight: bold;
+				font-size: 1.2em;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				i {
+					padding: 5px;
+				}
+			}
+		}
+
 		.navbar {
+			display: none;
 			.nav-link {
 				&::after,
 				&::before {

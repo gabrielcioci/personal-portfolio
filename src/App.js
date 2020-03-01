@@ -13,7 +13,7 @@ class App extends Component {
 			<div className="App">
 				{/*=================================== Start Main Menu =====================================*/}
 				<nav className="navbar sticky-top navbar-expand-lg">
-					<NavLink exact activeClassName="active-link" className="navbar-brand" to="/">
+					<NavLink exact activeClassName="active-link" className="navbar-brand" to="/personal-portfolio/">
 						<img src={logo} width="50" height="50" alt="" />
 					</NavLink>
 					<button
@@ -30,17 +30,32 @@ class App extends Component {
 						<div className="mr-auto" />
 						<ul className="navbar-nav">
 							<li className="nav-item">
-								<NavLink exact activeClassName="active-link" className="nav-link" to="/">
+								<NavLink
+									exact
+									activeClassName="active-link"
+									className="nav-link"
+									to="/personal-portfolio/"
+								>
 									about
 								</NavLink>
 							</li>
 							<li className="nav-item">
-								<NavLink exact activeClassName="active-link" className="nav-link" to="/projects">
+								<NavLink
+									exact
+									activeClassName="active-link"
+									className="nav-link"
+									to="/personal-portfolio/projects"
+								>
 									projects
 								</NavLink>
 							</li>
 							<li className="nav-item">
-								<NavLink exact activeClassName="active-link" className="nav-link" to="/contact">
+								<NavLink
+									exact
+									activeClassName="active-link"
+									className="nav-link"
+									to="/personal-portfolio/contact"
+								>
 									contact
 								</NavLink>
 							</li>
@@ -48,10 +63,21 @@ class App extends Component {
 					</div>
 				</nav>
 				{/*=================================== End Main Menu =====================================*/}
+				<div className="mobile-menu">
+					<NavLink exact className="mobile-link" to="/personal-portfolio/">
+						<i class="far fa-user-circle" />about
+					</NavLink>
+					<NavLink exact className="mobile-link" to="/personal-portfolio/projects">
+						<i class="far fa-clone " />projects
+					</NavLink>
+					<NavLink exact className="mobile-link" to="/personal-portfolio/contact">
+						<i class="far fa-comments" />contact
+					</NavLink>
+				</div>
 				<Switch>
-					<Route exact path="/" component={About} />
-					<Route exact path="/projects" component={Projects} />
-					<Route exact path="/contact" component={Contact} />
+					<Route exact path="/personal-portfolio/" component={About} />
+					<Route exact path="/personal-portfolio/projects" component={Projects} />
+					<Route exact path="/personal-portfolio/contact" component={Contact} />
 				</Switch>
 			</div>
 		);
