@@ -6,10 +6,10 @@ $yellow: #ffe75e;
 
 @mixin highlight {
 	color: $primarycolor;
-	transition: color .2s linear;
+	transition: all .1s linear;
 	&:hover {
-		background: $primarycolor;
-		color: white;
+		background: $yellow;
+		color: $primarycolor;
 	}
 }
 

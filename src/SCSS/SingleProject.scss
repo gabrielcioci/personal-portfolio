@@ -96,3 +96,13 @@
 		}
 	}
 }
+
+@media (max-width: 768px) {
+	.project-main {
+		.project-image {
+			.project-techs {
+				bottom: 5px;
+			}
+		}
+	}
+}
